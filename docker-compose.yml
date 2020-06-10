@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres:10.13
+    restart: always
+    environment:
+      - POSTGRES_USER=prisma
+      - POSTGRES_PASSWORD=prisma
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - '5435:5432'
+volumes:
+  postgres:

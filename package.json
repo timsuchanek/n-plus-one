@@ -1,0 +1,12 @@
+{
+  "name": "graphql-talk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@prisma/cli": "^2.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.0.0"
+  }
+}

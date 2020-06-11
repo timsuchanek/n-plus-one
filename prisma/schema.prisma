@@ -27,8 +27,8 @@ model Post {
 model Comment {
   id        Int    @default(autoincrement()) @id
   text      String
-  writtenBy User   @relation(fields: [userId], references: [id])
+  writtenBy User?  @relation(fields: [userId], references: [id])
   post      Post   @relation(fields: [postId], references: [id])
   postId    Int
-  userId    Int
+  userId    Int?
 }

@@ -38,9 +38,6 @@ client.connect()
 const resolvers = {
   Query: {
     users: async (_, { take = 10 }) => {
-      //  "public"."User"."id",
-      //  "public"."User"."email",
-      //  "public"."User"."name"
       const res = await client.query(
         `SELECT *
          FROM
@@ -56,11 +53,6 @@ const resolvers = {
   },
   User: {
     posts: async (user, { take = 10 }) => {
-      //  "public"."Post"."id",
-      //  "public"."Post"."title",
-      //  "public"."Post"."content",
-      //  "public"."Post"."published",
-      //  "public"."Post"."authorId"
       const res = await client.query(
         `SELECT *
          FROM
@@ -78,10 +70,6 @@ const resolvers = {
   },
   Post: {
     comments: async (post, { take = 10 }) => {
-      //  "public"."Comment"."id",
-      //  "public"."Comment"."text",
-      //  "public"."Comment"."postId",
-      //  "public"."Comment"."userId"
       const res = await client.query(
         `SELECT *
          FROM

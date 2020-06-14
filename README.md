@@ -1,5 +1,7 @@
 # N + 1
 
+![](talk/slides/Frame%204.svg)
+
 This repository contains the corresponding code to the talk "How Prisma solves the N+1 Problem" from Prisma Day 2020.
 
 ## Usage

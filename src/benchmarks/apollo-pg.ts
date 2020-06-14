@@ -35,10 +35,15 @@ const client = new Client({
 
 client.connect()
 
+const query = (...args) => {
+  console.log(...args)
+  return client.query(...args)
+}
+
 const resolvers = {
   Query: {
     users: async (_, { take = 10 }) => {
-      const res = await client.query(
+      const res = await query(
         `SELECT *
          FROM
            "public"."User"
@@ -53,7 +58,7 @@ const resolvers = {
   },
   User: {
     posts: async (user, { take = 10 }) => {
-      const res = await client.query(
+      const res = await query(
         `SELECT *
          FROM
            "public"."Post"
@@ -70,7 +75,7 @@ const resolvers = {
   },
   Post: {
     comments: async (post, { take = 10 }) => {
-      const res = await client.query(
+      const res = await query(
         `SELECT *
          FROM
            "public"."Comment"

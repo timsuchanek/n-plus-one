@@ -33,7 +33,9 @@ const schema = `
   }
 `
 
-const client = new PrismaClient()
+const client = new PrismaClient({
+  log: ['query'],
+})
 
 const resolvers = {
   Query: {

@@ -44,3 +44,25 @@ const server = createServer(function (req, res) {
 })
 
 server.listen(4001)
+
+
+query {
+  findManyUser(take: 10) {
+    id
+    email
+    name
+    posts(take: 10) {
+      id
+      title
+      content
+      published
+      authorId
+      comments(take: 10) {
+        id
+        text
+        postId
+        userId
+      }
+    }
+  }
+}

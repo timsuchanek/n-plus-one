@@ -1,4 +1,4 @@
-# N + 1
+# How Prisma solves the N+1 Problem - Prisma Day 2020
 
 ![](talk/slides/Frame%204.svg)
 

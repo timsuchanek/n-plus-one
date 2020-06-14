@@ -4,13 +4,17 @@ This repository contains the corresponding code to the talk "How Prisma solves t
 
 ## Usage
 
-```
+```bash
 yarn
+docker-compose up -d
+yarn prisma migrate up --experimental
+yarn seed
 yarn bench
 ```
 
 ## License
 
+```
 MIT License
 
 Copyright (c) 2020 Tim Suchanek
@@ -32,3 +36,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```

@@ -19,7 +19,7 @@
     "autocannon": "^5.0.1",
     "dotenv": "^8.2.0",
     "faker": "^4.1.0",
-    "fastify": "^2.14.1",
+    "fastify": "^2.15.1",
     "fastify-caching": "^5.0.0",
     "fastify-gql": "^4.0.0",
     "get-stream": "^5.1.0",
